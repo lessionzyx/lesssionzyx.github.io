@@ -358,6 +358,12 @@ a:hover {
 /* Responsive vue mobile */
 
 @media only screen and (max-width:690px) {
+
+	/* Responsive Jokes */
+
+	.jokediv {
+		font-size: 37px;
+	}
 	
 	/* Responsive Navbar */
 
