@@ -379,7 +379,7 @@ a:hover {
 		gap: 5px;
 		padding-left: 50px;
 		padding-right: 50px;
-		grid-template-rows: 20% 50% 10% 50% 10%;
+		grid-template-rows: 20% 50% 50% 10%;
 	}
 
 	.desc1 {
@@ -392,8 +392,8 @@ a:hover {
 	.desc2 {
 		grid-column-start: 1;
 		grid-column-end: 1;
-		grid-row-start: 4;
-		grid-row-end: 4;
+		grid-row-start: 3;
+		grid-row-end: 3;
 	}
 	
 	.portrait1, .portrait2 {
