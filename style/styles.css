@@ -361,7 +361,7 @@ a:hover {
 
 	/* Responsive Jokes */
 
-	.jokediv {
+	.jokediv, h1 {
 		font-size: 37px;
 	}
 	
