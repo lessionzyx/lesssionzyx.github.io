@@ -127,7 +127,6 @@ h1 {
 	max-height: 350px;
 	border-radius: 200px;
 	border: 2px solid white;
-	cursor: pointer;
 }
 
 .toggle-btn {
@@ -143,7 +142,6 @@ h1 {
 .title { 
 	color: #f3b814;
 	margin-right: auto;
-	cursor: pointer;
 }
 
 .content {
