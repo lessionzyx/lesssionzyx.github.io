@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll(".toggle-btn");
+const buttons = document.querySelectorAll(".toggle-btn") + document.querySelectorAll(".title") + document.querySelectorAll(".img-btn");
 
 buttons.forEach(button => {
 
