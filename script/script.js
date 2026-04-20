@@ -1,4 +1,5 @@
-const buttons = document.querySelectorAll(".toggle-btn") + document.querySelectorAll(".title") + document.querySelectorAll(".img-btn");
+const buttons = document.querySelectorAll(".toggle-btn");
+const imgs =  document.querySelectorAll(".title") + document.querySelectorAll(".img-btn");
 
 buttons.forEach(button => {
 
@@ -82,5 +83,88 @@ buttons.forEach(button => {
 
 	});	
 });
+
+imgs.forEach(img => {
+
+	img.addEventListener("click", () => { 
+
+		const target = document.getElementById(img.dataset.target);
+		const isOpen = target.classList.contains("show");
+
+		document.querySelectorAll(".content").forEach(el => {
+			el.classList.remove("unshow");
+		});
+
+		if(isOpen) {
+
+			if (img.dataset.target == "subDesc") {
+				document.getElementById("img2").classList.remove("unshow");
+				document.getElementById("title").classList.remove("unshow");
+				document.getElementById("title2").classList.remove("unshow");
+				document.getElementById("title1").classList.remove("unshow");
+
+				document.querySelectorAll(".toggle-btn").forEach(btn => {
+					btn.classList.remove("unshow");		
+					btn.classList.remove("bx-list-minus");
+					btn.classList.add("bx-list-plus");	
+				});
+
+				target.classList.remove("show");
+
+			} else {
+
+				document.getElementById("img1").classList.remove("unshow");
+				document.getElementById("title").classList.remove("unshow");
+				document.getElementById("title1").classList.remove("unshow");
+				document.getElementById("title2").classList.remove("unshow");
+
+				document.querySelectorAll(".toggle-btn").forEach(btn => {
+					btn.classList.remove("unshow");
+					btn.classList.remove("bx-list-minus");
+					btn.classList.add("bx-list-plus");
+				});
+
+				target.classList.remove("show");
+
+			}
+
+		} else {
+
+			if (img.dataset.target == "subDesc") {
+		
+				document.getElementById("img2").classList.add("unshow");
+				document.getElementById("title").classList.add("unshow");
+				document.getElementById("title2").classList.add("unshow");
+				document.getElementById("title1").classList.add("unshow");
+				document.querySelectorAll(".toggle-btn").forEach(btn => {
+					btn.classList.remove("bx-list-plus");
+					btn.classList.add("bx-list-minus");
+					btn.classList.remove("unshow");
+				});
+
+				target.classList.add("show");
+	
+			} else {
+
+				document.getElementById("img1").classList.add("unshow");
+				document.getElementById("title").classList.add("unshow");
+				document.getElementById("title1").classList.add("unshow");
+				document.getElementById("title2").classList.add("unshow");
+				document.querySelectorAll(".toggle-btn").forEach(btn => {
+					btn.classList.remove("bx-list-plus");
+					btn.classList.add("bx-list-minus");
+					btn.classList.remove("unshow");
+				});
+
+				target.classList.add("show");
+
+			}
+
+		}
+
+	});	
+});
+
+
 
 
