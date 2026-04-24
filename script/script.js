@@ -178,7 +178,9 @@ window.update = function update(picker) {
 					}
 }
 
-jscolor.trigger('input'); // triggers 'onInput' on all color pickers when they are ready
+if (typeof jscolor != "undefined") {
+    jscolor.trigger('input'); // triggers 'onInput' on all color pickers when they are ready
+} 
 
 // Position JavaScript
 const leftBtn = document.getElementById("left");
@@ -187,10 +189,10 @@ const rightBtn = document.getElementById("right");
 const text = document.getElementById("SidoDiv");
 
 leftBtn.addEventListener("click", () => {
-	if (text.style.textAlign === "right") {
+	if (text.style.textAlign == "right") {
         text.style.textAlign = "";
     }
-	if (text.style.textAlign === "center") {
+	if (text.style.textAlign == "center") {
         text.style.textAlign = "";
     }
 	text.style.textAlign = "left";
@@ -198,10 +200,10 @@ leftBtn.addEventListener("click", () => {
 });
 
 centerBtn.addEventListener("click", () => {
-	if (text.style.textAlign === "left") {
+	if (text.style.textAlign == "left") {
         text.style.textAlign = "";
     }
-	if (text.style.textAlign === "right") {
+	if (text.style.textAlign == "right") {
         text.style.textAlign = "";
     }
 	text.style.textAlign = "center";
@@ -209,10 +211,10 @@ centerBtn.addEventListener("click", () => {
 });
 
 rightBtn.addEventListener("click", () => {
-	if (text.style.textAlign === "left") {
+	if (text.style.textAlign == "left") {
         text.style.textAlign = "";
     }
-	if (text.style.textAlign === "center") {
+	if (text.style.textAlign == "center") {
         text.style.textAlign = "";
     }
 	text.style.textAlign = "right";
