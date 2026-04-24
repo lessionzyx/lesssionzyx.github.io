@@ -185,7 +185,7 @@ jscolor.trigger('input'); // triggers 'onInput' on all color pickers when they a
 const leftBtn = document.getElementById("left");
 const centerBtn = document.getElementById("center");
 const rightBtn = document.getElementById("right");
-const text = document.getElementById("sido");
+const text = document.getElementById("SidoDiv");
 
 leftBtn.addEventListener("click", () => {
 	text.classList.remove("text-align: right;");
