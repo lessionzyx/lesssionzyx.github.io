@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Geek Mindset</title>
+			<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" type="text/css" href="style/styles.css">
+			<link rel="icon" type="image/x-icon" href="https://www.creativefabrica.com/wp-content/uploads/2020/02/10/Geek-Logo-Graphics-1.jpg">
+		</head>
+		<body>
+			<div class="jokediv">
+				<br/><br/><h1>Bienvenue chez <br/>|Geek Mindset|</h1>
+				<p class="question">Êtes vous prêt ?</p>
+				<a class="joke" href="accueil.html"> [Oui]</a>
+				<a class="joke" href="accueil_2.html"> [Non]</a>
+			</div>
+		</body>
+	</html>
