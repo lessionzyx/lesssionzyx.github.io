@@ -571,13 +571,13 @@ a:hover {
 	.left {
 	    position: relative;
 	    right: 0px;
-		bottom: 30px;
+		bottom: 15px;
     }
 
     .right {
 	    position: relative;
 	    left: 0px;
-		top: 30px;
+		top: 15px;
     }
 
 	/* Responsive A propos*/
