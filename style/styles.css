@@ -568,6 +568,18 @@ a:hover {
 	    color: white;
     }
 
+	.left {
+	    position: relative;
+	    right: 0px;
+		bottom: 30px;
+    }
+
+    .right {
+	    position: relative;
+	    left: 0px;
+		top: 30px;
+    }
+
 	/* Responsive A propos*/
 
 	.crédit {
