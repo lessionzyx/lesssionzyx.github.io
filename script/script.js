@@ -1,6 +1,6 @@
 // Accueil JavaScript	
 const buttons = document.querySelectorAll(".toggle-btn");
-const imgs = document.querySelectorAll(".img-btn")
+const imgs = document.querySelectorAll(".img-btn");
 
 buttons.forEach(button => {
 
