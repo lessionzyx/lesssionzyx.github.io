@@ -557,6 +557,17 @@ a:hover {
 		color: white;
 	}
 
+	.left, .center, .right {
+		display: block;
+	    font-size: 25px;
+	    cursor: pointer;
+	    font-family: "Geo", sans-serif ;
+	    background-color: #f3b814;
+	    border: #f3b814 solid;
+	    border-radius: 90px;
+	    color: white;
+    }
+
 	/* Responsive A propos*/
 
 	.crédit {
