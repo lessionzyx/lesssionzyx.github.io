@@ -183,39 +183,28 @@ if (typeof jscolor != "undefined") {
 } 
 
 // Position JavaScript
-const leftBtn = document.getElementById("left");
-const centerBtn = document.getElementById("center");
-const rightBtn = document.getElementById("right");
-const text = document.getElementById("SidoDiv");
+document.addEventListener("DOMContentLoaded", () => {
 
-leftBtn.addEventListener("click", () => {
-	if (text.style.textAlign == "right") {
-        text.style.textAlign = "";
-    }
-	if (text.style.textAlign == "center") {
-        text.style.textAlign = "";
-    }
-	text.style.textAlign = "left";
+    const leftBtn = document.getElementById("left");
+    const centerBtn = document.getElementById("center");
+    const rightBtn = document.getElementById("right");
+    const text = document.getElementById("SidoDiv");
 
-});
+    if (!leftBtn || !centerBtn || !rightBtn || !text) {
+        console.log("Position JS: missing elements");
+        return;
+    }
 
-centerBtn.addEventListener("click", () => {
-	if (text.style.textAlign == "left") {
-        text.style.textAlign = "";
-    }
-	if (text.style.textAlign == "right") {
-        text.style.textAlign = "";
-    }
-	text.style.textAlign = "center";
+    leftBtn.addEventListener("click", () => {
+        text.style.textAlign = "left";
+    });
 
-});
+    centerBtn.addEventListener("click", () => {
+        text.style.textAlign = "center";
+    });
 
-rightBtn.addEventListener("click", () => {
-	if (text.style.textAlign == "left") {
-        text.style.textAlign = "";
-    }
-	if (text.style.textAlign == "center") {
-        text.style.textAlign = "";
-    }
-	text.style.textAlign = "right";
+    rightBtn.addEventListener("click", () => {
+        text.style.textAlign = "right";
+    });
+
 });
