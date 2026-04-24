@@ -89,7 +89,7 @@ h1 {
 	font-size: 20px;
 }
 
-/* Home CSS */
+/* Accueil CSS */
 
 .menu {
 	display: grid;
@@ -301,7 +301,7 @@ h1 {
 	left: 75px;
 }
 
-/* Download CSS */
+/* Téléchargement CSS */
 
 .table {
 	position: relative;
@@ -344,7 +344,7 @@ a:hover {
 	cursor: pointer;
 }
 
-/* About CSS */
+/* A propos CSS */
 
 .creditDiv {
 	margin: auto;
@@ -390,7 +390,7 @@ a:hover {
 
 @media only screen and (max-width:1100px) {
 	
-	/* Responsive pour accueil */
+	/* Responsive Accueil */
 
 	.portrait1, .portrait2 {
 		max-width: 200px;
@@ -421,7 +421,7 @@ a:hover {
 		height: auto;
 	}
 
-	/* Responsive pour a propos*/
+	/* Responsive A propos*/
 
 	.crédit {
 		font-size: 25px;
@@ -444,7 +444,7 @@ a:hover {
 
 @media only screen and (max-width:690px) {
 
-	/* Responsive Jokes */
+	/* Responsive Faux Acceuil */
 
 	.jokediv, h1 {
 		font-size: 37px;
@@ -462,7 +462,7 @@ a:hover {
 		margin: 0 auto;
 	}
 
-	/* Responsive pour accueil */
+	/* Responsive Accueil */
 
 	.menu {
 		display: grid;
@@ -520,7 +520,7 @@ a:hover {
 		height: auto;
 	}
 
-	/* Responsive pour accueil */
+	/* Responsive Code */
 	.code_titre {
 		padding: 15;
 		font-size: 33px;
@@ -549,6 +549,7 @@ a:hover {
 	}
 
 	/* Responsive Position */
+	
 	.SidoDiv {
 		text-align: center;
 		padding: 15px;
@@ -556,7 +557,7 @@ a:hover {
 		color: white;
 	}
 
-	/* Responsive pour a propos*/
+	/* Responsive A propos*/
 
 	.crédit {
 		font-size: 15px;
