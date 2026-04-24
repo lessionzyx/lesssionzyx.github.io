@@ -169,7 +169,7 @@ imgs.forEach(img => {
 	});	
 });
 
-// Code JavaScript
+// Couleur JavaScript
 window.update = function update(picker) {
 					console.log(picker.toString())
 					if (picker.toString()=='#000000' | picker.toString()=='#FFFFFF') {
@@ -180,3 +180,5 @@ window.update = function update(picker) {
 }
 
 jscolor.trigger('input'); // triggers 'onInput' on all color pickers when they are ready
+
+// Position JavaScript
