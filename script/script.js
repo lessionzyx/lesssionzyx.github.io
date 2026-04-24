@@ -182,3 +182,25 @@ window.update = function update(picker) {
 jscolor.trigger('input'); // triggers 'onInput' on all color pickers when they are ready
 
 // Position JavaScript
+const leftBtn = document.getElementById("left");
+const centerBtn = document.getElementById("center");
+const rightBtn = document.getElementById("right");
+const text = document.getElementById("sido");
+
+leftBtn.addEventListener("click", () => {
+	text.classList.remove("text-align: right;");
+	text.classList.remove("text-align: center;");
+	text.classList.add("text-align: left;");
+});
+
+centerBtn.addEventListener("click", () => {
+	text.classList.remove("text-align: right;");
+	text.classList.remove("text-align: left;");
+	text.classList.add("text-align: center;");
+});
+
+rightBtn.addEventListener("click", () => {
+	text.classList.remove("text-align: left;");
+	text.classList.remove("text-align: center;");
+	text.classList.add("text-align: right;");
+});
