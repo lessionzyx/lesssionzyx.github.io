@@ -29,20 +29,6 @@
             Entrez le nom d'une couleur (rouge, vert, jaune, bleu, violet, etc.)...
             </textarea> -->
 			<script src="script/jscolor.js"></script>
-
-			<script>
-				function update(picker) {
-					console.log(picker.toString())
-					if (picker.toString()=='#000000' | picker.toString()=='#FFFFFF') {
-						document.body.style.backgroundImage = `url('${'https://www.publicdomainpictures.net/pictures/40000/nahled/black-background-1365087945eJf.jpg'}')`;
-					} else {
-						document.body.style.background = picker.toString();
-					}
-				}
-
-				jscolor.trigger('input'); // triggers 'onInput' on all color pickers when they are ready
-			</script>
-
-
+			<script src="script/script.js"></script>
         </body>
 	</html>
