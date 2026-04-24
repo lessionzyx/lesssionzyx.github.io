@@ -188,31 +188,33 @@ const rightBtn = document.getElementById("right");
 const text = document.getElementById("SidoDiv");
 
 leftBtn.addEventListener("click", () => {
-	if(text.classList.contains("text-align: right;") {
-		text.classList.remove("text-align: right;");
-	}
-	if(text.classList.contains("text-align: center;") {
-		text.classList.remove("text-align: center;");
-	}
-	text.classList.add("text-align: left;");
+	if (text.style.textAlign === "right") {
+        text.style.textAlign = "";
+    }
+	if (text.style.textAlign === "center") {
+        text.style.textAlign = "";
+    }
+	text.style.textAlign = "left";
+
 });
 
 centerBtn.addEventListener("click", () => {
-	if(text.classList.contains("text-align: right;") {
-		text.classList.remove("text-align: right;");
-	}
-	if(text.classList.contains("text-align: left;") {
-		text.classList.remove("text-align: left;");
-	}
-	text.classList.add("text-align: center;");
+	if (text.style.textAlign === "left") {
+        text.style.textAlign = "";
+    }
+	if (text.style.textAlign === "right") {
+        text.style.textAlign = "";
+    }
+	text.style.textAlign = "center";
+
 });
 
 rightBtn.addEventListener("click", () => {
-	if(text.classList.contains("text-align: left;") {
-		text.classList.remove("text-align: left;");
-	}
-	if(text.classList.contains("text-align: center;") {
-		text.classList.remove("text-align: center;");
-	}
-	text.classList.add("text-align: right;");
+	if (text.style.textAlign === "left") {
+        text.style.textAlign = "";
+    }
+	if (text.style.textAlign === "center") {
+        text.style.textAlign = "";
+    }
+	text.style.textAlign = "right";
 });
