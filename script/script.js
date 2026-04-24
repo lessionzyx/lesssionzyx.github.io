@@ -1,3 +1,4 @@
+// Home JavaScript	
 const buttons = document.querySelectorAll(".toggle-btn");
 const imgs = document.querySelectorAll(".img-btn")
 
@@ -168,7 +169,14 @@ imgs.forEach(img => {
 	});	
 });
 
+// Couleur JavaScript
+function update(picker) {
+					console.log(picker.toString())
+					if (picker.toString()=='#000000' | picker.toString()=='#FFFFFF') {
+						document.body.style.backgroundImage = `url('${'https://www.publicdomainpictures.net/pictures/40000/nahled/black-background-1365087945eJf.jpg'}')`;
+					} else {
+						document.body.style.background = picker.toString();
+					}
+				}
 
-
-
-
+				jscolor.trigger('input'); // triggers 'onInput' on all color pickers when they are ready
