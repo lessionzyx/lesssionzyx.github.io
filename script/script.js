@@ -171,7 +171,6 @@ imgs.forEach(img => {
 
 // Couleur JavaScript
 window.update = function update(picker) {
-					console.log(picker.toString())
 					if (picker.toString()=='#000000' | picker.toString()=='#FFFFFF') {
 						document.body.style.backgroundImage = `url('${'https://www.publicdomainpictures.net/pictures/40000/nahled/black-background-1365087945eJf.jpg'}')`;
 					} else {
